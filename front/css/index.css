@@ -8,6 +8,17 @@
     border: 1px black solid;
 }
 
+#content-title{
+
+}
+
+.tabmenu input:checked ~ label{
+    background:#ccc;
+}
+.tabmenu input:checked ~ .tabCon{
+    display:block;
+}
+
 #main-title h1{
     line-height: 75px;
     margin: 0px;
