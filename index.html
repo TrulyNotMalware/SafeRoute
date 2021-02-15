@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="./front/css/index.css">
+        <meta charset="utf-8"> 
+        <title>안전철(Safe-Route)</title>
+    </head>
+    <body>
+        <div id="main-title">
+            <h1>안전철(Safe-Route)</h1>
+            <h3>당신의 대중교통 안전한가요?</h3>
+        </div>
+        <div id = "main-content">
+            <div id="metro-content">
+                <div id="content-title">
+                    <h2>서울 지하철 노선도</h2>
+                </div>
+                <div id="main-image">
+                    <img src="./front/image/seoul_subway.png" width="600px" height="480px">
+                </div>
+            </div>
+            <div id="map-content">
+    
+            </div>
+        </div>
+        <footer>
+            <div id="team-intro">
+                <p>건국대학교 컴퓨터공학부<br>서형상, 김재우, 이예인, 이준호, 이광해</p>
+            </div>
+        </footer>
+        <div id="frogue-container" class="position-right-bottom"
+      data-chatbot="69801daa-1c88-4777-ac68-52a01483268c"
+      data-user="사용자ID"
+      data-init-key="value"
+      ></div>
+        <!-- data-init-식별키=값 으로 셋팅하면 챗플로우에 파라미터와 연동가능. 식별키는 소문자만 가능 -->
+        <script>
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https:\/\/danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'frogue-embed'));
+        </script>
+    </body>
+</html>
