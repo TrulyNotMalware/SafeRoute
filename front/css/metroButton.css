@@ -1,0 +1,83 @@
+.line-image{
+    height: 400px;
+}
+
+#line-tab {
+    font-family:'nanumgothic', '나눔고딕', 'malgun gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;
+}
+/* 탭 선택 시 표시할 요소(div) 정의(1번 탭 선택 시 첫 번째 div 요소 표시) */
+#line-tab input:nth-of-type(1), #line-tab input:nth-of-type(1) ~ div:nth-of-type(1), #line-tab input:nth-of-type(2), #line-tab input:nth-of-type(2) ~ div:nth-of-type(2), #line-tab input:nth-of-type(3), #line-tab input:nth-of-type(3) ~ div:nth-of-type(3), #line-tab input:nth-of-type(4), #line-tab input:nth-of-type(4) ~ div:nth-of-type(4), #line-tab input:nth-of-type(5), #line-tab input:nth-of-type(5) ~ div:nth-of-type(5), #line-tab input:nth-of-type(6), #line-tab input:nth-of-type(6) ~ div:nth-of-type(6), #line-tab input:nth-of-type(7), #line-tab input:nth-of-type(7) ~ div:nth-of-type(7), #line-tab input:nth-of-type(8), #line-tab input:nth-of-type(8) ~ div:nth-of-type(8), #line-tab input:nth-of-type(9), #line-tab input:nth-of-type(9) ~ div:nth-of-type(9), #line-tab input:nth-of-type(10), #line-tab input:nth-of-type(10) ~ div:nth-of-type(10) {
+    display:none
+}
+#line-tab input:nth-of-type(1):checked ~ div:nth-of-type(1), #line-tab input:nth-of-type(2):checked ~ div:nth-of-type(2), #line-tab input:nth-of-type(3):checked ~ div:nth-of-type(3),#line-tab input:nth-of-type(4):checked ~ div:nth-of-type(4), #line-tab input:nth-of-type(5):checked ~ div:nth-of-type(5), #line-tab input:nth-of-type(6):checked ~ div:nth-of-type(6),#line-tab input:nth-of-type(7):checked ~ div:nth-of-type(7), #line-tab input:nth-of-type(8):checked ~ div:nth-of-type(8), #line-tab input:nth-of-type(9):checked ~ div:nth-of-type(9),#line-tab input:nth-of-type(10):checked ~ div:nth-of-type(10) {
+    display:block
+}
+/* 라벨 기본 스타일 지정 */
+#line-tab > label {
+    display:inline-block;
+    font-variant:small-caps;
+    font-size:.9em;
+    padding:5px;
+    text-align:center;
+    width: 45px;
+    line-height:1.8em;
+    font-weight:700;
+    border-radius:3px 3px 0 0;
+    background:#eee;
+    color:#777;
+    border:1px solid #ccc;
+    border-width:1px 1px 0
+}
+#line-tab > label:hover {
+    cursor:pointer
+}
+/*#line-tab label[for=tab0] {
+    margin-left:1.5em
+}*/
+/* 선택된 라벨, 커서를 올린 라벨 스타일 지정 */
+#line-tab input:nth-of-type(1):checked ~ label:nth-of-type(1), #line-tab > label[for=tab0]:hover {
+    background: #3681b7;
+    color:#fff
+}
+#line-tab input:nth-of-type(2):checked ~ label:nth-of-type(2), #line-tab > label[for=tab1]:hover {
+    background :#0d3692;
+    color:#fff
+}
+#line-tab input:nth-of-type(3):checked ~ label:nth-of-type(3), #line-tab > label[for=tab2]:hover {
+    background:#33a23d;
+    color:#fff
+}
+#line-tab input:nth-of-type(4):checked ~ label:nth-of-type(4), #line-tab > label[for=tab3]:hover {
+    background:#fe5d10;
+    color:#fff
+}
+#line-tab input:nth-of-type(5):checked ~ label:nth-of-type(5), #line-tab > label[for=tab4]:hover {
+    background:#00a2d1;
+    color:#fff
+}
+#line-tab input:nth-of-type(6):checked ~ label:nth-of-type(6), #line-tab > label[for=tab5]:hover {
+    background:#8b50a4;
+    color:#fff
+}
+#line-tab input:nth-of-type(7):checked ~ label:nth-of-type(7), #line-tab > label[for=tab6]:hover {
+    background:#c55c1d;
+    color:#fff
+}
+#line-tab input:nth-of-type(8):checked ~ label:nth-of-type(8), #line-tab > label[for=tab7]:hover {
+    background:#54640d;
+    color:#fff
+}
+#line-tab input:nth-of-type(9):checked ~ label:nth-of-type(9), #line-tab > label[for=tab8]:hover {
+    background:#f14c82;
+    color:#fff
+}#line-tab input:nth-of-type(10):checked ~ label:nth-of-type(10), #line-tab > label[for=tab9]:hover {
+    background:#aa9872;
+    color:#fff
+}
+/* 실제 내용이 담긴 div 요소 스타일 지정 */
+/*#line-tab #line1, #line-tab #line2, #line-tab #line3, #line-tab #line4, #line-tab #line5, #line-tab #line6,#line-tab #line7, #line-tab #line8, #line-tab #line9,#line-tab #line10{
+    padding:2em;
+    border:1px solid #ddd;
+    width:70%;
+    height:100%
+}*/
